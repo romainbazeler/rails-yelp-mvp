@@ -2,10 +2,12 @@
 
 <ul>
   <% @restaurants.each do |restaurant|%>
-    <li><%= restaurant.name %></li>
-    <li><%= restaurant.address %></li>
-    <li><%= restaurant.phone_number %></li>
-    <li><%= restaurant.category %></li>
+    <li><%= restaurant.name %>
+    <%= link_to 'See Details', restaurant %>
+     <%= link_to 'Add a review', restaurant %>
     <% end %>
 </ul>
 
+   <%# <li><%= restaurant.address %></li>
+    <%# <li><%= restaurant.phone_number %></li>
+    <%# <li><%= restaurant.category %></li> 
